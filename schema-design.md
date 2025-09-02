@@ -77,8 +77,8 @@
   "doctorNotes": "Advise rest and hydration. Follow up in 1 week.",
   "issuedAt": "2025-07-03T10:15:00Z",
   "pharmacy": {
-    "name": "Greenleaf Pharmacy",
-    "location": "432 Oak Blvd, Charleston, SC"
+    "name": "Chemist Warehouse",
+    "location": "22 Rooty Hill Rd N, Rooty Hill NSW 2766"
   },
   "refillCount": 1,
   "tags": ["antibiotic", "pain-relief"],
