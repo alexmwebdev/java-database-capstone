@@ -1,6 +1,8 @@
 package com.project.back_end.models;
 
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import org.springframework.data.annotation.Id;
 
 public class Prescription {
 
