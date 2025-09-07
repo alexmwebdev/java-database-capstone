@@ -1,0 +1,32 @@
+mysql> CREATE PROCEDURE GetDoctorWithMostPatientsByMonth(
+    ->     IN input_month INT, 
+    ->     IN input_year INT
+    -> )
+    -> BEGIN
+    ->     SELECT
+    ->         doctor_id, 
+    ->         COUNT(patient_id) AS patients_seen
+    ->     FROM
+    ->         appointment
+    ->     WHERE
+    ->         MONTH(appointment_time) = input_month 
+    ->         AND YEAR(appointment_time) = input_year
+    ->     GROUP BY
+    ->         doctor_id
+    ->     ORDER BY
+    ->         patients_seen DESC
+    ->     LIMIT 1;
+    -> END $$
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> 
+mysql> DELIMITER ;
+mysql> CALL GetDoctorWithMostPatientsByMonth(4, 2025);
++-----------+---------------+
+| doctor_id | patients_seen |
++-----------+---------------+
+|         2 |            31 |
++-----------+---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
