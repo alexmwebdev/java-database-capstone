@@ -23,8 +23,8 @@ window.onload = () => {
 
 // === Admin Login Handler ===
 window.adminLoginHandler = async function () {
-  const username = document.getElementById("adminUsername")?.value;
-  const password = document.getElementById("adminPassword")?.value;
+  const username = document.getElementById("adminUsername").value;
+  const password = document.getElementById("adminPassword").value;
 
   if (!username || !password) {
     alert("Please enter both username and password.");

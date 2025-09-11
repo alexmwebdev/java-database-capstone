@@ -40,7 +40,7 @@ main {
   align-items: center;
   text-align: center;
 
-  background-image: url('../images/index/index.png');
+ /*background-image: url('../images/index/index.png');*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ main {
   align-items: center;
   text-align: center;
 
-  background-image: url('../images/index/index.png');
+  /*background-image: url('../images/index/index.png');*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
