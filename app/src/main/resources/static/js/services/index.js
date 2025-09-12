@@ -41,7 +41,8 @@ window.adminLoginHandler = async function () {
       },
       body: JSON.stringify(admin)
     });
-
+    console.log(JSON.stringify(admin));
+    console.log(response);
     if (!response.ok) {
       alert("Invalid admin credentials.");
       return;
